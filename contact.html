@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Contact Parimal Industries — Baazar Road, near Reliance Tower, Araul, Kanpur. Call, WhatsApp, email or visit for wholesale and retail enquiries." />
+  <meta name="theme-color" content="#0E0806" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Contact Us — Parimal Industries</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #C9A55F;
+      --gold-light: #E2C98A;
+      --gold-dim: rgba(201,165,95,0.18);
+      --dark: #0E0806;
+      --dark-2: #161210;
+      --dark-3: #1E1915;
+      --text: #E8DFD0;
+      --text-muted: #9E9080;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Jost', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 2.5rem;
+      background: rgba(14,8,6,0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,165,95,0.12);
+    }
+    .nav-logo {
+      font-family: var(--serif); font-size: 1.4rem; font-weight: 400;
+      color: var(--gold); letter-spacing: 0.06em; text-decoration: none;
+    }
+    .nav-logo span { font-style: italic; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--text-muted); text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-cta {
+      font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--dark); background: var(--gold); padding: 0.55rem 1.2rem;
+      border-radius: 2px; text-decoration: none; transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--gold-light); }
+    .mobile-menu-btn {
+      display: none; background: none; border: none; color: var(--gold);
+      font-size: 1.4rem; cursor: pointer;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 52vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 2.5rem 4.5rem;
+      position: relative; overflow: hidden;
+      background: var(--dark-2);
+      border-bottom: 1px solid rgba(201,165,95,0.1);
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1551690935-a9e6f0a7e788?w=1200&q=60&auto=format&fit=crop') center/cover no-repeat;
+      opacity: 0.12;
+    }
+    .breadcrumb {
+      position: absolute; top: calc(80px + 2rem); left: 2.5rem;
+      font-size: 0.68rem; letter-spacing: 0.1em; color: var(--text-muted);
+    }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--gold); }
+    .hero-eyebrow {
+      font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.2rem; position: relative;
+    }
+    .hero h1 {
+      font-family: var(--serif); font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+      font-weight: 300; line-height: 1.05; position: relative; max-width: 680px;
+    }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero-sub {
+      margin-top: 1.4rem; font-size: 1rem; color: var(--text-muted);
+      max-width: 460px; position: relative;
+    }
+
+    /* ── MAIN CONTACT ── */
+    .contact-main {
+      padding: 6rem 2.5rem;
+      background: var(--dark);
+    }
+    .contact-layout {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;
+    }
+
+    /* LEFT — info */
+    .contact-info { }
+    .section-label {
+      font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 300; line-height: 1.1;
+    }
+    h2 em { font-style: italic; color: var(--gold); }
+    .contact-intro { color: var(--text-muted); margin-top: 1rem; margin-bottom: 2.5rem; }
+
+    .contact-cards { display: flex; flex-direction: column; gap: 1px; }
+    .contact-card {
+      display: flex; align-items: flex-start; gap: 1.5rem;
+      padding: 1.8rem 1.5rem;
+      background: var(--dark-3);
+      text-decoration: none; color: inherit;
+      border-left: 2px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .contact-card:hover { border-left-color: var(--gold); background: var(--dark-2); }
+    .card-icon {
+      width: 40px; height: 40px; min-width: 40px;
+      border: 1px solid rgba(201,165,95,0.25);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: var(--gold); margin-top: 0.1rem;
+    }
+    .card-body { flex: 1; }
+    .card-type {
+      font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold); display: block; margin-bottom: 0.2rem;
+    }
+    .card-value {
+      font-family: var(--serif); font-size: 1.2rem; color: var(--text);
+      display: block; margin-bottom: 0.2rem;
+    }
+    .card-note { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* HOURS */
+    .hours-block {
+      margin-top: 2rem; padding: 1.5rem;
+      border: 1px solid rgba(201,165,95,0.12);
+    }
+    .hours-title {
+      font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+    }
+    .hours-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(201,165,95,0.07);
+      font-size: 0.85rem;
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row .day { color: var(--text-muted); }
+    .hours-row .time { color: var(--text); }
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.3rem 0.7rem; border-radius: 20px;
+      border: 1px solid rgba(201,165,95,0.3); color: var(--gold);
+      margin-top: 1rem;
+    }
+    .status-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--gold); animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; } 50% { opacity: 0.3; }
+    }
+
+    /* RIGHT — form + map */
+    .contact-form-side { }
+    .form-card {
+      background: var(--dark-3); padding: 2.5rem;
+      border: 1px solid rgba(201,165,95,0.1);
+    }
+    .form-card h3 {
+      font-family: var(--serif); font-size: 1.5rem; margin-bottom: 0.4rem;
+    }
+    .form-card h3 em { font-style: italic; color: var(--gold); }
+    .form-card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.8rem; }
+
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block; font-size: 0.68rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; background: var(--dark-2);
+      border: 1px solid rgba(201,165,95,0.18);
+      color: var(--text); font-family: var(--sans); font-weight: 300;
+      font-size: 0.9rem; padding: 0.75rem 1rem; border-radius: 2px;
+      outline: none; transition: border-color 0.2s;
+      -webkit-appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-group select option { background: var(--dark-2); }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .btn-submit {
+      width: 100%; padding: 1rem;
+      background: var(--gold); color: var(--dark);
+      font-family: var(--sans); font-size: 0.75rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      border: none; border-radius: 2px; cursor: pointer;
+      transition: background 0.2s; margin-top: 0.5rem;
+    }
+    .btn-submit:hover { background: var(--gold-light); }
+
+    /* MAP */
+    .map-block {
+      margin-top: 2rem;
+      border: 1px solid rgba(201,165,95,0.1);
+      overflow: hidden; border-radius: 2px;
+    }
+    .map-block iframe {
+      width: 100%; height: 260px; border: none; display: block;
+      filter: invert(90%) hue-rotate(180deg) saturate(0.6);
+    }
+    .map-address {
+      background: var(--dark-3); padding: 1.2rem 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .map-address-text { font-size: 0.82rem; color: var(--text-muted); }
+    .map-address-text strong { color: var(--text); display: block; margin-bottom: 0.1rem; font-weight: 400; }
+    .map-open-link {
+      font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); text-decoration: none; white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .map-open-link:hover { color: var(--gold-light); }
+
+    /* INDIAMRT STRIP */
+    .indiamrt-strip {
+      background: var(--dark-3);
+      border-top: 1px solid rgba(201,165,95,0.1);
+      border-bottom: 1px solid rgba(201,165,95,0.1);
+      padding: 3rem 2.5rem;
+    }
+    .indiamrt-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 2rem; flex-wrap: wrap;
+    }
+    .indiamrt-text h3 {
+      font-family: var(--serif); font-size: 1.6rem; margin-bottom: 0.4rem;
+    }
+    .indiamrt-text h3 em { font-style: italic; color: var(--gold); }
+    .indiamrt-text p { color: var(--text-muted); font-size: 0.88rem; max-width: 460px; }
+    .btn-indiamrt {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.85rem 2rem; background: var(--gold); color: var(--dark);
+      font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+      text-decoration: none; border-radius: 2px;
+      transition: background 0.2s; white-space: nowrap;
+    }
+    .btn-indiamrt:hover { background: var(--gold-light); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark-2);
+      border-top: 1px solid rgba(201,165,95,0.1);
+      padding: 3.5rem 2.5rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem;
+    }
+    .footer-brand p { font-size: 0.85rem; margin-top: 0.8rem; max-width: 260px; color: var(--text-muted); }
+    .footer-brand .brand-name {
+      font-family: var(--serif); font-size: 1.5rem; color: var(--gold);
+    }
+    footer h4 {
+      font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+    }
+    footer ul { list-style: none; }
+    footer ul li + li { margin-top: 0.5rem; }
+    footer ul a {
+      font-size: 0.85rem; color: var(--text-muted); text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer ul a:hover { color: var(--gold); }
+    .footer-bottom {
+      max-width: 1100px; margin: 2.5rem auto 0;
+      padding-top: 1.5rem; border-top: 1px solid rgba(201,165,95,0.08);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.72rem; color: var(--text-muted);
+    }
+
+    /* FLOATING WHATSAPP */
+    .wa-float {
+      position: fixed; bottom: 1.8rem; right: 1.8rem; z-index: 200;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      text-decoration: none;
+      animation: wa-bounce 3s ease-in-out infinite;
+    }
+    .wa-float svg { width: 26px; height: 26px; fill: #fff; }
+    @keyframes wa-bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links, .nav-cta { display: none; }
+      .mobile-menu-btn { display: block; }
+      .hero { padding: 0 1.5rem 3.5rem; }
+      .breadcrumb { left: 1.5rem; }
+      .contact-main { padding: 4rem 1.5rem; }
+      .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+      .indiamrt-strip { padding: 2.5rem 1.5rem; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+
+    @media (max-width: 560px) {
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .indiamrt-inner { flex-direction: column; }
+      .map-address { flex-direction: column; align-items: flex-start; gap: 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo"><span>P</span>arimal</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="craft.html">Craft</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="#enquiry-form" class="nav-cta">Enquire Now</a>
+    <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="breadcrumb"><a href="index.html">Home</a> › Contact Us</p>
+    <p class="hero-eyebrow">◆ Get In Touch</p>
+    <h1>Let us <em>craft</em><br>your enquiry.</h1>
+    <p class="hero-sub">Call, WhatsApp, email or visit us on Baazar Road, Araul — every message is answered personally.</p>
+  </header>
+
+  <!-- MAIN CONTACT -->
+  <section class="contact-main" id="enquiry-form">
+    <div class="contact-layout">
+
+      <!-- LEFT: contact info -->
+      <div class="contact-info">
+        <p class="section-label">Reach Us Directly</p>
+        <h2>Every channel<br>leads <em>to us</em>.</h2>
+        <p class="contact-intro">Pick whichever way is easiest — calls, messages and visits are all equally welcome at Parimal Industries.</p>
+
+        <div class="contact-cards" id="contact-cards">
+
+          <a href="tel:+919466495729" class="contact-card">
+            <div class="card-icon">📞</div>
+            <div class="card-body">
+              <span class="card-type">Call</span>
+              <span class="card-value">+91 94664 95729</span>
+              <span class="card-note">Tap to dial directly — Mon to Sat, 10 AM – 7 PM</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/919466495729?text=Namaste%20Parimal%20Industries%20%F0%9F%99%8F%0A%0AI%27d%20like%20to%20enquire%20about%20your%20products.%20Please%20share%20the%20catalogue%20%26%20pricing.%0A%0AThank%20you!" class="contact-card" target="_blank" rel="noopener">
+            <div class="card-icon">💬</div>
+            <div class="card-body">
+              <span class="card-type">WhatsApp</span>
+              <span class="card-value">+91 94664 95729</span>
+              <span class="card-note">Instant chat — usually replied within minutes</span>
+            </div>
+          </a>
+
+          <a href="mailto:enquiry@parimalindustries.com" class="contact-card">
+            <div class="card-icon">✉</div>
+            <div class="card-body">
+              <span class="card-type">Email</span>
+              <span class="card-value">enquiry@parimalindustries.com</span>
+              <span class="card-note">For wholesale, bulk orders and formal enquiries</span>
+            </div>
+          </a>
+
+          <a href="https://www.google.com/maps/place/Parimal+Industries,+Baazar+Road,+near+Reliance+Tower,+Araul,+Kanpur,+Uttar+Pradesh+209202" class="contact-card" target="_blank" rel="noopener">
+            <div class="card-icon">📍</div>
+            <div class="card-body">
+              <span class="card-type">Visit</span>
+              <span class="card-value">Baazar Road, Araul</span>
+              <span class="card-note">Near Reliance Tower, Araul, Kanpur — UP 209202</span>
+            </div>
+          </a>
+
+          <a href="https://IndiaMART.in/yZlvgkX2" class="contact-card" target="_blank" rel="noopener">
+            <div class="card-icon">🏪</div>
+            <div class="card-body">
+              <span class="card-type">IndiaMART Storefront</span>
+              <span class="card-value">IndiaMART.in/yZlvgkX2</span>
+              <span class="card-note">Browse products and send trade enquiries online</span>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="hours-block">
+          <p class="hours-title">Business Hours</p>
+          <div class="hours-row">
+            <span class="day">Monday – Friday</span>
+            <span class="time">10:00 AM – 7:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Saturday</span>
+            <span class="time">10:00 AM – 7:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Sunday</span>
+            <span class="time">Closed</span>
+          </div>
+          <div class="status-badge" id="status-badge">
+            <span class="status-dot" id="status-dot"></span>
+            <span id="status-text">Checking…</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: form + map -->
+      <div class="contact-form-side">
+        <div class="form-card">
+          <h3>Send an <em>Enquiry</em></h3>
+          <p>Fill this form and we'll send your message straight to our WhatsApp — usually replied within minutes.</p>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Ramesh Gupta" autocomplete="name" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="city">Your City</label>
+              <input type="text" id="city" name="city" placeholder="e.g. Lucknow" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Enquiry Type</label>
+            <select id="interest" name="interest">
+              <option value="">Select…</option>
+              <option value="wholesale">Wholesale / Bulk Order</option>
+              <option value="agarbatti">Agarbatti</option>
+              <option value="dhoop">Dhoop / Dhoop Cones</option>
+              <option value="attar">Attar</option>
+              <option value="perfume-oils">Perfume Oils</option>
+              <option value="custom">Custom Blend / OEM</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your requirement — product, quantity, delivery location, etc."></textarea>
+          </div>
+
+          <button class="btn-submit" onclick="sendWhatsApp()">Send via WhatsApp →</button>
+        </div>
+
+        <!-- MAP -->
+        <div class="map-block">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.2!2d80.019!3d26.921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e7df646c20b79%3A0xd33f9ce9486c5561!2sParimal%20Industries!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Parimal Industries location on Google Maps">
+          </iframe>
+          <div class="map-address">
+            <div class="map-address-text">
+              <strong>Parimal Industries</strong>
+              Baazar Road, near Reliance Tower, Araul, Kanpur — UP 209202
+            </div>
+            <a href="https://maps.app.goo.gl/Gwtznk9Rb2hbapgY7" target="_blank" rel="noopener" class="map-open-link">Open in Maps ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INDIAMRT STRIP -->
+  <div class="indiamrt-strip">
+    <div class="indiamrt-inner">
+      <div class="indiamrt-text">
+        <h3>Also find us on <em>IndiaMART</em></h3>
+        <p>Browse our complete product catalogue, check availability, and send a direct trade enquiry through India's largest B2B marketplace.</p>
+      </div>
+      <a href="https://IndiaMART.in/yZlvgkX2" target="_blank" rel="noopener" class="btn-indiamrt">
+        Visit Our Storefront ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-name">Parimal</div>
+        <p>Sacred fragrances handcrafted in India — where every breath carries a story, every scent holds a memory.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="craft.html">The Craft</a></li>
+          <li><a href="index.html#testimonials">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Collection</h4>
+        <ul>
+          <li><a href="collection.html#agarbatti">Agarbatti</a></li>
+          <li><a href="collection.html#dhoop">Dhoop</a></li>
+          <li><a href="collection.html#attar">Pure Attar</a></li>
+          <li><a href="collection.html#perfume">Perfume Oils</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#contact-cards">Wholesale</a></li>
+          <li><a href="https://IndiaMART.in/yZlvgkX2" target="_blank" rel="noopener">IndiaMART</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2015 Parimal Industries. All rights reserved.</span>
+      <span>Araul, Kanpur, Uttar Pradesh — 209202</span>
+    </div>
+  </footer>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/919466495729?text=Namaste%20Parimal%20Industries%20%F0%9F%99%8F%0A%0AI%27d%20like%20to%20enquire%20about%20your%20products.%20Please%20share%20the%20catalogue%20%26%20pricing.%0A%0AThank%20you!" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Open/Closed status
+    function updateStatus() {
+      const now = new Date();
+      const day = now.getDay(); // 0=Sun, 6=Sat
+      const hour = now.getHours();
+      const badge = document.getElementById('status-badge');
+      const dot = document.getElementById('status-dot');
+      const text = document.getElementById('status-text');
+      const isOpen = day >= 1 && day <= 6 && hour >= 10 && hour < 19;
+      if (isOpen) {
+        dot.style.background = '#4CAF50';
+        badge.style.borderColor = 'rgba(76,175,80,0.4)';
+        badge.style.color = '#4CAF50';
+        text.textContent = 'Open Now';
+      } else {
+        dot.style.background = '#888';
+        badge.style.borderColor = 'rgba(136,136,136,0.3)';
+        badge.style.color = '#888';
+        text.textContent = day === 0 ? 'Closed — Sunday' : 'Closed Now';
+      }
+    }
+    updateStatus();
+
+    // WhatsApp form submit
+    function sendWhatsApp() {
+      const name = document.getElementById('name').value.trim() || 'Not provided';
+      const phone = document.getElementById('phone').value.trim() || 'Not provided';
+      const city = document.getElementById('city').value.trim() || 'Not provided';
+      const interest = document.getElementById('interest').value || 'General enquiry';
+      const message = document.getElementById('message').value.trim() || 'Please share your catalogue and pricing.';
+
+      const text = `Namaste Parimal Industries 🙏\n\n*New Enquiry from Website*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*City:* ${city}\n*Enquiry Type:* ${interest}\n\n*Message:*\n${message}\n\nThank you!`;
+      const url = `https://wa.me/919466495729?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
